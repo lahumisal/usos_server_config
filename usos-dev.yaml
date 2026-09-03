@@ -23,7 +23,5 @@ cors:
 
 jwt:
   secret: VGhpc0lzVW5pdmVyc2l0eVNjaG9vbE9wZXJhdGlvblN5c3RlbUtleQ==
-  algorithm: HmacSHA256
-
 server:
   port: 8090
