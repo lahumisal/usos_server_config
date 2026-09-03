@@ -1,7 +1,10 @@
 spring:
   application:
     name: university-school-os
-
+  jwt:
+  secret: VGhpc0lzVW5pdmVyc2l0eVNjaG9vbE9wZXJhdGlvblN5c3RlbUtleQ==
+  algorithm: HmacSHA256
+  
   datasource:
     url: jdbc:postgresql://localhost:5432/usos
     username: usos_app
@@ -20,10 +23,6 @@ cors:
     hibernate:
       ddl-auto: update   # or create, create-drop, none — depends on your setup
     show-sql: true       # shows SQL queries in logs
-
-jwt:
-  secret: VGhpc0lzVW5pdmVyc2l0eVNjaG9vbE9wZXJhdGlvblN5c3RlbUtleQ==
-  algorithm: HmacSHA256
 
 server:
   port: 8090
