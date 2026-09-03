@@ -1,3 +1,29 @@
-#smart_school-prod.yml
+spring:
+  application:
+    name: university-school-os
+
+  datasource:
+    url: 
+    username: 
+    password: 
+    driver-class-name: 
+
+cors:
+  allowed-origins: 
+  allowed-methods: 
+  allowed-headers: 
+  exposed-headers: 
+  allow-credentials: 
+  max-age: 
+
+  jpa:
+    hibernate:
+      ddl-auto: 
+    show-sql: 
+
+jwt:
+  secret: 
+  algorithm: 
+
 server:
-  port: 9090
+  port: 
