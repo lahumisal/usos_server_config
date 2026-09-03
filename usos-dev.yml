@@ -1,11 +1,29 @@
-#smart_school-dev.yml
-server:
-  port: 9090
+spring:
+  application:
+    name: university-school-os
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/usos
+    username: usos_app
+    password: usos2025
+    driver-class-name: org.postgresql.Driver
 
 cors:
-  allowed-origins: http://localhost:2025,http://localhost:2026
-  allowed-methods: GET,POST,PUT,DELETE,OPTIONAL
-  allowed-headers: "*"
-  exposed-headers: Authorization
+  allowed-origins: http://localhost:2026,http://localhost:2027,http://localhost:3000
+  allowed-methods: GET,POST,PUT,DELETE,PATCH
+  allowed-headers: Authorization,Content-Type,X-Requested-With,Accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Cache-Control
+  exposed-headers: Authorization,Cache-Control
   allow-credentials: true
   max-age: 3600
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # or create, create-drop, none — depends on your setup
+    show-sql: true       # shows SQL queries in logs
+
+jwt:
+  secret: VGhpc0lzVW5pdmVyc2l0eVNjaG9vbE9wZXJhdGlvblN5c3RlbUtleQ==
+  algorithm: HmacSHA256
+
+server:
+  port: 8090
