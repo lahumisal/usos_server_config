@@ -2,9 +2,6 @@ spring:
   application:
     name: usos
 
-server:
-  port: 8000
-
   datasource:
     url: jdbc:postgresql://localhost:5432/usos
     username: usos_app
@@ -27,4 +24,4 @@ cors:
 jwt:
   secret: VGhpc0lzVW5pdmVyc2l0eVNjaG9vbE9wZXJhdGlvblN5c3RlbUtleQ==
 server:
-  port: 8090
+  port: 8000
