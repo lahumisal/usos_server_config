@@ -24,4 +24,4 @@ cors:
 jwt:
   secret: VGhpc0lzVW5pdmVyc2l0eVNjaG9vbE9wZXJhdGlvblN5c3RlbUtleQ==
 server:
-  port: 8000
+  port: 8090
